@@ -1,0 +1,92 @@
+1. Pseudocode Second Law
+
+STORE "N" without value
+STORE "m" with value 600
+STORE "m/s2" with value 2
+
+CLCULATE "m" times "m/s2"
+SET "N" value with calculation result
+
+DISPLAY "N"
+
+2. Tahun Kabisat
+
+// Algoritma
+
+Tahun kabisat pada suatu tahun
+
+Jika tahun/4 = habis; Jika tahun/100 = tidak habis; maka 
+
+Keterangan = tahun kabisat atau bukan tahun kabisat.
+
+atau
+
+Jika tahun/4 = habis; Jika tahun/100 = habis; Jika tahun/400 = habis; maka
+
+Keterangan = tahun kabisat atau bukan tahun kabisat.
+
+//Pseudocode
+
+STORE "ketentuan1" with number 4
+STORE "ketentuan2" with number 100
+STORE "ketentuan3" with number 400
+STORE "tahun" without number
+
+IF "tahun" modulo "ketentuan1" EQUALS TO 0, "tahun" modulo "ketentuan2" NOT EQUALS TO 0
+	DO "Leap Years" 
+ELSE IF "tahun" modulo "ketentuan1" EQUALS TO 0, "tahun" modulo "ketentuan2" EQUALS TO 0, "tahun" modulo "ketentuan3" EQUALS TO 0
+	DO "Leap Years" 
+ELSE 
+	DO "Not Leap Years"
+
+3. Laundry Day
+
+// Algoritma
+
+Pakaian sebanyak 20
+
+Sementara pakaian <= 20 maka
+keterangan = mesin cuci menyala
+
+
+Tampilan Keterangan
+
+//Pseudocode
+
+STORE "clothes" with 0
+
+WHILE "clothes" <= 20
+	ADD "clothes" by 1
+
+DISPLAY "Machine Turn On"
+
+4. Periksa Kuku
+
+//Algoritma
+
+guru memerikasa kuku
+
+Jika kuku panjang dari 40 siswa maka
+keterangan = guru akan memberikan hukuman.
+
+tetapi
+Jika kuku tidak panjang dari 40 siswa maka
+keterangan = guru akan memuji
+
+
+
+//Pseudocode :
+
+STORE "Kuku" to 1
+
+WHILE "kuku" < 40
+	DISPLAY "kuku"
+	CALCULATE "kuku" mod 1
+	STORE "remainder" to the result of calculation
+IF "remainder" equals to 0
+	Display "Menghukum Siswa"
+ELSE
+	DISPLAY "Memuji Siswa" 	
+
+
+
